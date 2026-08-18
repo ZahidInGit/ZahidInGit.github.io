@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Zahid Fahamid | Developer & Author</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">ZF.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#fiction">Fiction</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+    <!-- Theme Switcher Controls -->
+    <div class="theme-select-wrapper">
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select" onchange="setTheme(this.value)">
+        <option value="dark">Dark Slate</option>
+        <option value="light">Clean Light</option>
+        <option value="cyber">Cyberpunk</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="tagline">Hello, I'm</p>
+      <h1>Md. Zahid Fahamid</h1>
+      <h2>ICT Student, Flutter Developer & Web Novelist</h2>
+      <p class="bio-short">
+        Combining technical software design with high-concept creative fiction. 
+        Currently building cross-platform applications in Dart/Flutter and writing web novel sagas.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View Projects</a>
+        <a href="resume.pdf" class="btn secondary-btn" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-card">
+      <p>
+        I am an <strong>Information and Communication Technology</strong> student at 
+        <strong>Mawlana Bhashani Science and Technology University</strong> (Expected Graduation: Late 2028), 
+        originally from Thakurgaon, Bangladesh.
+      </p>
+      <p>
+        My core passion lies in creative problem-solving—whether through designing responsive, clean mobile interfaces using 
+        Flutter and Dart, or engineering worldbuilding systems for serialized fiction.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Primary Stack</h3>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Core Languages</h3>
+        <div class="tags">
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Creative & Design</h3>
+        <div class="tags">
+          <span class="tag">Worldbuilding</span>
+          <span class="tag">Novel Writing</span>
+          <span class="tag">UI/UX Thinking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Software Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Wrivio -->
+      <div class="project-card">
+        <div class="project-tag">Flagship Mobile App</div>
+        <h3>Wrivio</h3>
+        <p>A specialized app built for novel writers and authors, focusing on structured worldbuilding, scene organization, and distraction-free writing.</p>
+        <p class="tech-used"><strong>Tech:</strong> Flutter, Dart</p>
+        <div class="project-links">
+          <a href="https://github.com/ZahidInGit" target="_blank" rel="noopener" class="project-link">View on GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <!-- PenPad Lite -->
+      <div class="project-card">
+        <div class="project-tag">Utility App</div>
+        <h3>PenPad Lite</h3>
+        <p>A lightweight, fast, and minimal notepad application engineered for quick thoughts and immediate note-taking.</p>
+        <p class="tech-used"><strong>Tech:</strong> Flutter, Dart</p>
+        <div class="project-links">
+          <a href="https://github.com/ZahidInGit" target="_blank" rel="noopener" class="project-link">View on GitHub &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Web Fiction Section -->
+  <section id="fiction" class="section">
+    <h2 class="section-title">Featured Web Fiction</h2>
+    <div class="about-card fiction-card">
+      <div class="project-tag">Royal Road Web Novel</div>
+      <h3>Zone Zero</h3>
+      <p>
+        An original ongoing web novel series. Explores high-stakes narrative arcs, detailed physical power logic, and expansive worldbuilding.
+      </p>
+      <div class="project-links" style="margin-top: 1.5rem;">
+        <a href="https://www.royalroad.com/fiction/185218/zone-zero" target="_blank" rel="noopener" class="btn primary-btn">Read Zone Zero on Royal Road &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-box">
+      <p>Interested in my software projects, or want to discuss creative writing? Drop a message!</p>
+      <div class="contact-buttons">
+        <a href="mailto:it24012@mbstu.ac.bd" class="btn primary-btn">Email Me</a>
+        <a href="https://github.com/ZahidInGit" target="_blank" rel="noopener" class="btn secondary-btn">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Md. Zahid Fahamid. Built with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script>
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('selected-theme', theme);
+    }
+    // Load saved theme if exists
+    const savedTheme = localStorage.getItem('selected-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-select').value = savedTheme;
+  </script>
+</body>
+</html>
